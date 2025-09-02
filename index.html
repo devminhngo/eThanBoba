@@ -1,45 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daily Revenue</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <div class="logo">Ethan Ngô</div>
-      <nav>
-        <ul>
-          <li>
-            <a
-              href="https://script.google.com/macros/s/AKfycby01G3KpdCpFo-FEQeDC-mhB4C9KWpimH9thKDwMUeYCQbn83D0EymqTic1mXa2uz_wiw/exec"
-              >Park Meadows</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://script.google.com/macros/s/AKfycbxGZY2xmhJ3Eud31rOvzlcWlgrLdAWHAlBFp_MckDMA6SgUpgATrKMg0LCoFTBMfwIvmw/exec"
-              >Coal Mine</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://script.google.com/macros/s/AKfycbzSlXLBo3_RKQKA7ytuBFbplBBAdDFQnLqf0BQIMAc1W1dSg4kta9GDhQjuLa7x1ZWvuw/exec"
-              >Ralston Square</a
-            >
-          </li>
-        </ul>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ethan Boba</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <a class="brand" href="#" aria-label="Home">Ethan Boba</a>
+    
+  </header>
+      <img
+  class="avatar"
+  src="bg.jpg"           
+  alt="Ethan Boba"
+  loading="eager"
+  decoding="async"
+/>
+  <main class="wrap" id="main-content">
+    <section class="hero" aria-labelledby="title">
+      <h1 id="title">Drink More Think Less</h1>
+      <p class="sub">"Minh Sugar"</p>
+
+      <nav class="button-grid" aria-label="Primary actions">
+        <a class="btn" href="https://script.google.com/macros/s/AKfycby01G3KpdCpFo-FEQeDC-mhB4C9KWpimH9thKDwMUeYCQbn83D0EymqTic1mXa2uz_wiw/exec"
+              >Park Meadows</a>
+        <a class="btn" href="https://script.google.com/macros/s/AKfycbxGZY2xmhJ3Eud31rOvzlcWlgrLdAWHAlBFp_MckDMA6SgUpgATrKMg0LCoFTBMfwIvmw/exec"
+              >Coal Mine</a>
+        <a class="btn" href="https://script.google.com/macros/s/AKfycbx5kfcVKl6dZq9rFTz43-7D44pEK6JBlIstyrqgIGDDSbpNBS1LD5NrRwsn0jGuXQBSKw/exec"
+              >Ralston Square</a>
+        <a class="btn" href="https://script.google.com/macros/s/AKfycbxl_GRfqzJLC5fHUSF2mIXeAZO7BhoX6TQDDnm6SisA25Kcy3ZdSonbhWhGeX_bmXlw/exec"
+              >Cherry Creek</a>
+        <a class="btn" href="https://script.google.com/macros/s/AKfycbws-WcWs3ONma0sHOo5lHussHcKXA-qXE08WcbWqBZbzRVK-fUXwp0g3C6CN1B_zWs/exec"
+              >Castle Rock</a>
+        <a class="btn" href="#six">Houston</a>
       </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <h1>Baby Sợ</h1>
-        <p>Click on the links above to pay!</p>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2025 Ethan Ngô. All Rights Reserved.</p>
-    </footer>
-  </body>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <small>© <span id="year"></span> Shineris</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>

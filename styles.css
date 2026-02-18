@@ -74,7 +74,7 @@ h1{
 
 
 .avatar{
-  width: clamp(100px, 25vw, 200px);
+  width: clamp(50px, 25vw, 100px);
   border-radius: 50%;        
   object-fit: cover;    
   display: block;
@@ -116,8 +116,8 @@ h1{
   }
 }
 
-.btn{
-  display: inline-flex;
+.shop-name{
+    display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 14px 18px;
@@ -125,6 +125,23 @@ h1{
   border: 1px solid color-mix(in oklab, var(--accent), black 15%);
   background: linear-gradient(180deg, color-mix(in oklab, var(--accent), white 12%), var(--accent));
   color: var(--accent-ink);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: .2px;
+  transition: transform .15s ease, box-shadow .15s ease, opacity .15s ease;
+  box-shadow: 0 6px 16px rgba(34, 87, 255, .25);
+  will-change: transform;
+}
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 18px;
+  border-radius: calc(var(--radius) - 2px);
+  border: 1px solid color-mix(in oklab, var(--accent), black 15%);
+  background: #151922;
+  color: white;
   text-decoration: none;
   font-weight: 700;
   letter-spacing: .2px;
